@@ -13,10 +13,10 @@ var waypoint = new Waypoint ({
 });
 
 var waypoint = new Waypoint ({
-    element: document.querySelector('#beer3').querySelector('.svg-graphic'),
+    element: document.querySelector('#Beer3').querySelector('.svg-graphic'),
     handler: function(direction) {
         console.log("scrolled to beer3", this.element);
-        runAnimation(this.element, ["lBarrel, cBarrel, rBarrel"]);
+        this.element.classList.add("newFill");
     },
         offset: 200
 }); //sos
@@ -60,7 +60,8 @@ var waypoint = new Waypoint ({
     }
 
     function getData(){
-//run a fetch call to the DB and get the data that foes with this graphic
+//run a fetch call to the DB and get the data that goes with this graphic
+//he's not doing this, we need to
 debugger;
 
     }

@@ -38,3 +38,9 @@ p > span /*direct descendent selector - in my index.html, I have a paragraph and
     display: block;
     padding-bottom: 12px;
 }
+
+.newFill
+{
+    width: 50%;
+    fill: red;
+}
